@@ -1,6 +1,3 @@
-function convertPokemonTypesToLi(pokemonTypes){
-    return pokemonTypes.map((typesSlot) => `<li class="type">${typeSlot.type.name}</li>`)
-}
 
 function convertPokemonToLi(pokemon) {
     return `
@@ -14,7 +11,7 @@ function convertPokemonToLi(pokemon) {
                 </ol>
 
                 <img src="${pokemon.photo}"
-                     alt="${pokemon.name}">
+                    alt="${pokemon.name}">
             </div>
         </li>
     `

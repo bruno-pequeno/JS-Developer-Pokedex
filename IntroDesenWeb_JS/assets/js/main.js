@@ -1,5 +1,8 @@
+function convertPokemonTypesToLi(pokemonTypes){
+    return pokemonTypes.map((typesSlot) => `<li class="type">${typeSlot.type.name}</li>`)
+}
 
-function covertPokemonToLi(pokemon) {
+function convertPokemonToLi(pokemon) {
     return `
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
@@ -19,10 +22,8 @@ function covertPokemonToLi(pokemon) {
 
 const pokemonList = document.getElementById('pokemonList')
     
-    pokeApi.getPokemons().then((pokemons) => {
-        for (let i = 0; i < pokemons.length; i++) {
-            const pokemon = pokemons[i];
-            pokemonList.innerHTML += covertPokemonToLi(pokemon)     
-        }
-    })
-    .catch((error) => console.error(error))
+pokeApi.getPokemons().then((pokemons = []) => {
+    pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('')
+
+})
+.catch((error) => console.error(error))

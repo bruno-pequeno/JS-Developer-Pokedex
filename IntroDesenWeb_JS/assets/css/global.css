@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background: rgb(220,245,251);
+    background: linear-gradient(90deg, rgba(220,245,251,1) 0%, rgba(235,247,212,1) 100%);
 }
 
 .content {
@@ -12,6 +13,11 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
+}
+
+.content h1 {
+    text-align: center;
+    color: linear-gradient(90deg, rgba(168,167,8,1) 0%, rgba(121,9,53,1) 35%, rgba(66,77,222,1) 73%, rgba(255,124,0,1) 100%);
 }
 
 @media screen and (min-width: 992px) {

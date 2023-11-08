@@ -23,7 +23,7 @@
     <br />
     
 <h2> Vizualize o projeto!  </h2>
-<a href="https://js-pokedex-taupe.vercel.app/" target="_blank"> Veja aqui a Pokedex </a> 
+<a href="https://js-pokedex-6chbpd01h-brunopequeno.vercel.app/" target="_blank"> Veja aqui a Pokedex </a> 
   </p> 
    <br />
 
